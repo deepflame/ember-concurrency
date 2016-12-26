@@ -40,6 +40,9 @@ Router.map(function() {
   });
   this.route('experimental-prediction');
   this.route('helpers-test');
+  this.route('testing-ergo', function() {
+    this.route('foo');
+  });
   this.route('data-test');
   this.route('task-injection-test');
 });
