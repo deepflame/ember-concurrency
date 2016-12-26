@@ -42,6 +42,7 @@ Router.map(function() {
   this.route('helpers-test');
   this.route('testing-ergo', function() {
     this.route('foo');
+    this.route('slow');
   });
   this.route('data-test');
   this.route('task-injection-test');
