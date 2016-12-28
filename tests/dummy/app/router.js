@@ -42,6 +42,7 @@ Router.map(function() {
   this.route('helpers-test');
   this.route('testing-ergo', function() {
     this.route('foo');
+    this.route('foo-settimeout');
     this.route('slow');
     this.route('timer-loop');
   });
