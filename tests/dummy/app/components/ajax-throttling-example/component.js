@@ -14,12 +14,6 @@ function loopingAjaxTask(id, color) {
 }
 
 export default Ember.Component.extend({
-  ajaxTask: task(function * () {
-    // simulate slow AJAX
-    yield timeout(2000 + 2000 * Math.random());
-    return {};
-  }).enqueue().maxConcurrency(3),
-
   task0: loopingAjaxTask(0, '#0000FF'),
   task1: loopingAjaxTask(1, '#8A2BE2'),
   task2: loopingAjaxTask(2, '#A52A2A'),
